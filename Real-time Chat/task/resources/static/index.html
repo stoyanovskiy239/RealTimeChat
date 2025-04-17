@@ -7,9 +7,14 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<input id="input-msg" type="text">
-<button id="send-msg-btn"></button>
-<div id="messages">
+<div id="username-ui">
+    <input id="input-username" type="text" placeholder="Enter username">
+    <button id="send-username-btn">Join Chat</button>
+</div>
+<div id="chat-ui" style="display:none;">
+    <input id="input-msg" type="text">
+    <button id="send-msg-btn"></button>
+    <div id="messages"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
